@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import CryptoPrices from './component/CryptoPrices';
+import Shape from './component/Shape';
 
 function App() {
+  const data = [
+    [1, 1, 0],
+    [0, 1, 1],
+    [1, 0, 1]
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <CryptoPrices /> */}
+      <Shape data={data} />
     </div>
   );
 }
